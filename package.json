@@ -1,0 +1,38 @@
+{
+  "name": "cise_ass1a_worksheet3",
+  "version": "1.0.0",
+  "description": "mern app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "app": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/18034756/cise_ass1a_worksheet3.git"
+  },
+  "author": "Tai Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18034756/cise_ass1a_worksheet3.git"
+  },
+  "homepage": "https://github.com/18034756/cise_ass1a_worksheet3.git",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "react-router-dom": "^6.2.2",
+    "validation": "^0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "web-vitals": "^2.1.4"
+  }
+}
