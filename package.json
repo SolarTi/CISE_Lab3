@@ -7,18 +7,24 @@
     "start": "node server.js",
     "app": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "server": "nodemon server.js",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/18034756/cise_ass1a_worksheet3.git"
+    "url": "https://github.com/SolarTi/CISE_Lab3.git"
   },
   "author": "Tai Zhang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/18034756/cise_ass1a_worksheet3.git"
+    "url": "https://github.com/SolarTi/CISE_Lab3.git"
   },
-  "homepage": "https://github.com/18034756/cise_ass1a_worksheet3.git",
+  "homepage": "https://github.com/SolarTi/CISE_Lab3.git",
   "dependencies": {
     "axios": "^0.26.1",
     "bcryptjs": "^2.4.3",
